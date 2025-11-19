@@ -577,6 +577,24 @@ J’aurais préféré être un symbole avec une prime. »</blockquote>
         
     </article>
     </div>
+
+<script>
+  // Accordéon du menu
+  const titles = document.querySelectorAll('.theme-title');
+
+  titles.forEach(title => {
+    title.addEventListener('click', () => {
+      const articles = title.nextElementSibling;
+      const open = articles.style.display === 'block';
+
+      // Ferme tous les autres
+      document.querySelectorAll('.articles').forEach(a => a.style.display = 'none');
+
+      // Ouvre celui cliqué
+      if (!open) articles.style.display = 'block';
+    });
+  });
+</script>
 </body>
 </html>
         
