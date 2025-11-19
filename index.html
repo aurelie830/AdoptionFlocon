@@ -61,6 +61,56 @@
         .interview dd {
           margin-left: 1.5em;
         }
+          /* --- MENU LATÉRAL --- */
+          .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 230px;
+            height: 100%;
+            background: #f4f4f4;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            overflow-y: auto;
+          }
+        
+          .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+        
+          .theme-title {
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 6px;
+          }
+        
+          .theme-title:hover {
+            background: #e3e3e3;
+          }
+        
+          .articles {
+            display: none;
+            padding-left: 15px;
+            margin-bottom: 10px;
+          }
+        
+          .articles a {
+            display: block;
+            margin: 6px 0;
+            text-decoration: none;
+            color: #333;
+          }
+        
+          .articles a:hover {
+            text-decoration: underline;
+          }
+        /* --- CONTENU --- */
+          .content {
+            margin-left: 260px; /* espace pour le menu */
+            padding: 20px;
+          }
     </style>
 </head>
 <body>
